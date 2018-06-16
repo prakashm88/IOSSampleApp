@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--homeController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IOSSampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="homeController" id="BYZ-38-t0r" customClass="ViewController" customModule="IOSSampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -41,7 +41,7 @@
                                 <state key="normal" title="Move to Next Scene"/>
                                 <connections>
                                     <action selector="movetoNext:" destination="BYZ-38-t0r" eventType="touchDown" id="45a-kL-A6i"/>
-                                    <segue destination="crv-lx-VJm" kind="presentation" id="8L4-PU-G6y"/>
+                                    <segue destination="crv-lx-VJm" kind="presentation" id="q1h-0h-Bvn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -67,10 +67,10 @@
             </objects>
             <point key="canvasLocation" x="-2.5" y="-523.5"/>
         </scene>
-        <!--View Controller-->
+        <!--detailsController-->
         <scene sceneID="egV-bB-VXV">
             <objects>
-                <viewController id="crv-lx-VJm" sceneMemberID="viewController">
+                <viewController title="detailsController" id="crv-lx-VJm" customClass="DetailViewController" customModule="IOSSampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hyk-rG-6Ld"/>
                         <viewControllerLayoutGuide type="bottom" id="IK7-hF-35m"/>
@@ -78,12 +78,42 @@
                     <view key="view" contentMode="scaleToFill" id="HYk-8h-KMA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obtained Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Lg-ba-86u">
+                                <rect key="frame" x="16" y="70" width="154" height="20.5"/>
+                                <accessibility key="accessibilityConfiguration" label="Obtained Name:"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69G-KC-pYW">
+                                <rect key="frame" x="178" y="70" width="181" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="ilg-oc-4eZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9Lg-ba-86u" firstAttribute="top" secondItem="hyk-rG-6Ld" secondAttribute="bottom" constant="50" id="7nY-yp-0UH"/>
+                            <constraint firstAttribute="trailing" secondItem="9Lg-ba-86u" secondAttribute="trailing" constant="205" id="Evs-JL-UJ7"/>
+                            <constraint firstItem="69G-KC-pYW" firstAttribute="top" secondItem="hyk-rG-6Ld" secondAttribute="bottom" constant="50" id="U5N-zw-gC8"/>
+                            <constraint firstAttribute="trailing" secondItem="69G-KC-pYW" secondAttribute="trailing" constant="16" id="bO5-Kq-9gF"/>
+                            <constraint firstItem="9Lg-ba-86u" firstAttribute="leading" secondItem="HYk-8h-KMA" secondAttribute="leading" constant="16" id="n9k-Z3-pPW"/>
+                            <constraint firstItem="69G-KC-pYW" firstAttribute="leading" secondItem="9Lg-ba-86u" secondAttribute="trailing" constant="8" id="ory-EI-spN"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="FCo-nN-bKK"/>
+                    <connections>
+                        <outlet property="obtainedName" destination="69G-KC-pYW" id="zwL-1g-zos"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T6a-jz-XVZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="890" y="-523"/>
+            <point key="canvasLocation" x="882" y="-524"/>
         </scene>
     </scenes>
 </document>

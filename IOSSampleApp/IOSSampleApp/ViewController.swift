@@ -26,9 +26,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
     @IBAction func movetoNext(_ sender: Any) {
         print (username.text! ) ;
+        //self.performSegue(withIdentifier: "detailViewCon  troller", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let destController = segue.destination as! DetailViewController
+        destController.userName = username.text!
     }
 }
 
