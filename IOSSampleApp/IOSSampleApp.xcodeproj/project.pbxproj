@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C93C4D0820D55F1B00477315 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93C4D0720D55F1B00477315 /* DetailViewController.swift */; };
+		C93C4D0A20D5746F00477315 /* RandomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93C4D0920D5746E00477315 /* RandomUser.swift */; };
 		CDF5CED920D504C600B0BE79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF5CED820D504C600B0BE79 /* AppDelegate.swift */; };
 		CDF5CEDB20D504C600B0BE79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF5CEDA20D504C600B0BE79 /* ViewController.swift */; };
 		CDF5CEDE20D504C600B0BE79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF5CEDC20D504C600B0BE79 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		C93C4D0720D55F1B00477315 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C93C4D0920D5746E00477315 /* RandomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUser.swift; sourceTree = "<group>"; };
 		CDF5CED520D504C600B0BE79 /* IOSSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDF5CED820D504C600B0BE79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDF5CEDA20D504C600B0BE79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				CDF5CED820D504C600B0BE79 /* AppDelegate.swift */,
 				CDF5CEDA20D504C600B0BE79 /* ViewController.swift */,
 				C93C4D0720D55F1B00477315 /* DetailViewController.swift */,
+				C93C4D0920D5746E00477315 /* RandomUser.swift */,
 				CDF5CEDC20D504C600B0BE79 /* Main.storyboard */,
 				CDF5CEE220D504C600B0BE79 /* Assets.xcassets */,
 				CDF5CEE420D504C600B0BE79 /* LaunchScreen.storyboard */,
@@ -269,6 +272,7 @@
 				CDF5CEDB20D504C600B0BE79 /* ViewController.swift in Sources */,
 				CDF5CED920D504C600B0BE79 /* AppDelegate.swift in Sources */,
 				C93C4D0820D55F1B00477315 /* DetailViewController.swift in Sources */,
+				C93C4D0A20D5746F00477315 /* RandomUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
