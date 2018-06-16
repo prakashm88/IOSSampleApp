@@ -11,12 +11,19 @@ import UIKit
 class DetailViewController: UIViewController {
     
     var userName:String = ""
+    var genderValue:String = ""
+    var nationalityValue:String = ""
 
+    @IBOutlet weak var gender: UILabel!
+    @IBOutlet weak var nationality: UILabel!
     @IBOutlet weak var obtainedName: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(" \(userName) == \(nationalityValue) == \(genderValue) ")
         obtainedName.text = userName
+        nationality.text = nationalityValue
+        gender.text = genderValue
         // Do any additional setup after loading the view.
     }
 

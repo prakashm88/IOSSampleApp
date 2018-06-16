@@ -13,33 +13,9 @@ class RandomUserRequest: NSObject {
     let format:String = "json"
     let gender:String = "male"
     let nat:String = "GB"
-    let genders = [Genders.male, Genders.female]
     
-    enum Genders:String {
-        case male = "Male"
-        case female = "Female"
-    }
     
-    let nats = [Nats.AU, Nats.BR, Nats.CA, Nats.DE, Nats.DK, Nats.ES, Nats.FI, Nats.FR, Nats.GB, Nats.IE, Nats.IR, Nats.NL, Nats.NZ, Nats.TR, Nats.US]
-    
-    //AU, BR, CA, CH, DE, DK, ES, FI, FR, GB, IE, IR, NL, NZ, TR, US
-    enum Nats:String {
-        case AU = "AU"
-        case BR = "BR"
-        case CA = "CA"
-        case DE = "DE"
-        case DK = "DK"
-        case ES = "ES"
-        case FI = "FI"
-        case FR = "FR"
-        case GB = "GB"
-        case IE = "IE"
-        case IR = "IR"
-        case NL = "NL"
-        case NZ = "NZ"
-        case TR = "TR"
-        case US = "US"
-    }
+   
 }
 
 class RandomUsers: NSObject {
