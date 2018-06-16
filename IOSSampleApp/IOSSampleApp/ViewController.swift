@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     
+    @IBOutlet weak var username: UITextField!
     
     @IBAction func nameText(_ sender: AnyObject) {
     }
@@ -26,5 +27,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func movetoNext(_ sender: Any) {
+        print (username.text! ) ;
+    }
 }
 
