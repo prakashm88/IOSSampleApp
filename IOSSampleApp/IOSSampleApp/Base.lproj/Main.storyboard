@@ -180,22 +180,23 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="UFZ-JV-LY8" secondAttribute="trailing" constant="16" id="23t-le-rNp"/>
                             <constraint firstItem="69G-KC-pYW" firstAttribute="leading" secondItem="Ifo-ph-of1" secondAttribute="leading" id="8jX-HE-82O"/>
-                            <constraint firstItem="IK7-hF-35m" firstAttribute="top" secondItem="69G-KC-pYW" secondAttribute="bottom" constant="500" id="AMv-gG-gQ1"/>
                             <constraint firstItem="Ifo-ph-of1" firstAttribute="leading" secondItem="3k1-27-vXV" secondAttribute="leading" id="HTr-Vo-ycD"/>
                             <constraint firstItem="Ifo-ph-of1" firstAttribute="trailing" secondItem="HYk-8h-KMA" secondAttribute="trailingMargin" id="NHz-PY-EDU"/>
+                            <constraint firstItem="3k1-27-vXV" firstAttribute="top" secondItem="hyk-rG-6Ld" secondAttribute="bottom" constant="55" id="OoD-uZ-DwJ"/>
                             <constraint firstItem="69G-KC-pYW" firstAttribute="top" secondItem="Ifo-ph-of1" secondAttribute="bottom" constant="13" id="SCO-hi-YSF"/>
-                            <constraint firstItem="3k1-27-vXV" firstAttribute="top" secondItem="hyk-rG-6Ld" secondAttribute="bottom" constant="55" id="ZBO-4Z-A1V"/>
+                            <constraint firstItem="UFZ-JV-LY8" firstAttribute="top" secondItem="hyk-rG-6Ld" secondAttribute="bottom" constant="8" id="Ymn-Ur-TJl"/>
                             <constraint firstItem="UFZ-JV-LY8" firstAttribute="leading" secondItem="HYk-8h-KMA" secondAttribute="leading" constant="16" id="ZLU-8m-aXM"/>
-                            <constraint firstItem="UFZ-JV-LY8" firstAttribute="top" secondItem="hyk-rG-6Ld" secondAttribute="bottom" constant="8" id="c8q-Vh-kOi"/>
+                            <constraint firstItem="IK7-hF-35m" firstAttribute="top" secondItem="69G-KC-pYW" secondAttribute="bottom" constant="500" id="eIv-eb-c76"/>
                             <constraint firstItem="69G-KC-pYW" firstAttribute="trailing" secondItem="Ifo-ph-of1" secondAttribute="trailing" id="ea1-Z0-5ri"/>
                             <constraint firstItem="Ifo-ph-of1" firstAttribute="top" secondItem="3k1-27-vXV" secondAttribute="bottom" constant="13" id="fTl-UV-Dco"/>
-                            <constraint firstItem="UFZ-JV-LY8" firstAttribute="top" secondItem="hyk-rG-6Ld" secondAttribute="bottom" constant="8" id="fVz-W9-gs9"/>
                             <constraint firstItem="Ifo-ph-of1" firstAttribute="trailing" secondItem="3k1-27-vXV" secondAttribute="trailing" id="gtD-2J-Otm"/>
+                            <constraint firstItem="UFZ-JV-LY8" firstAttribute="top" secondItem="hyk-rG-6Ld" secondAttribute="bottom" constant="8" id="iJY-WQ-xMh"/>
                             <constraint firstItem="69G-KC-pYW" firstAttribute="leading" secondItem="UFZ-JV-LY8" secondAttribute="leading" id="nGt-Qu-7M0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FCo-nN-bKK"/>
                     <connections>
+                        <outlet property="contentView" destination="HYk-8h-KMA" id="M5K-ZB-ciI"/>
                         <outlet property="gender" destination="3k1-27-vXV" id="n0V-Zm-lAp"/>
                         <outlet property="nationality" destination="Ifo-ph-of1" id="lgu-cd-g9b"/>
                         <outlet property="obtainedName" destination="69G-KC-pYW" id="zwL-1g-zos"/>
