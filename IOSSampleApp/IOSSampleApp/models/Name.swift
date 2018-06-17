@@ -8,7 +8,9 @@
 
 import Foundation
 
-public class Name {
+public class Name: CustomStringConvertible {
+    public var description: String
+    
 	public var title : String?
 	public var first : String?
 	public var last : String?
@@ -48,6 +50,8 @@ public class Name {
 		title = dictionary["title"] as? String
 		first = dictionary["first"] as? String
 		last = dictionary["last"] as? String
+        
+        description = "Name:- Title: \(String(describing: title)), first: \(String(describing: first)), last: \(String(describing: last))"
 	}
 
 		

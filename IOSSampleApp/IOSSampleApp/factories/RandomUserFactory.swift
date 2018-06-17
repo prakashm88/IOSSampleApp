@@ -10,8 +10,9 @@ import UIKit
 
 class RandomUserFactory: NSObject {
     
-    public  func randomUsers (from dictionaryArray: [[String: String]]) -> [RandomUsers] {
-        return RandomUsers.modelsFromDictionaryArray(array: dictionaryArray as NSArray)
+   
+    
+    public  func randomUsers (from dictionaryObj: NSDictionary) -> RandomUsers {
+        return RandomUsers.init(dictionary: dictionaryObj)!
     }
-
 }

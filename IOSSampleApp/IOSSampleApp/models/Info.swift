@@ -8,7 +8,9 @@
 
 import Foundation
   
-public class Info {
+public class Info: CustomStringConvertible {
+    public var description: String
+    
 	public var seed : String?
 	public var results : Int?
 	public var page : Int?
@@ -50,6 +52,8 @@ public class Info {
 		results = dictionary["results"] as? Int
 		page = dictionary["page"] as? Int
 		version = dictionary["version"] as? Double
+        
+        description = "Info:- seed: \(String(describing: seed)), results: \(String(describing: results)), page: \(String(describing: page)), version: \(String(describing: version)) "
 	}
 
 		

@@ -8,7 +8,9 @@
 
 import Foundation
 
-public class RandomUsers {
+public class RandomUsers: CustomStringConvertible  {
+    public var description: String
+    
 	public var results : Array<Results>?
 	public var info : Info?
 
@@ -43,9 +45,9 @@ public class RandomUsers {
     - returns: RandomUsers Instance.
 */
 	required public init?(dictionary: NSDictionary) {
-
         if (dictionary["results"] != nil) { results = Results.modelsFromDictionaryArray(array: dictionary["results"] as! NSArray) }
 		if (dictionary["info"] != nil) { info = Info(dictionary: dictionary["info"] as! NSDictionary) }
+        description = "RandomUser:- Results: \(String(describing: results)), Info: \(String(describing: info))"
 	}
 
 		

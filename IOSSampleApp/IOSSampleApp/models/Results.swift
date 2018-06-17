@@ -8,7 +8,9 @@
 
 import Foundation
 
-public class Results {
+public class Results: CustomStringConvertible  {
+    public var description: String
+    
 	public var gender : String?
 	public var name : Name?
 	public var location : Location?
@@ -66,6 +68,9 @@ public class Results {
 		if (dictionary["id"] != nil) { id = Id(dictionary: dictionary["id"] as! NSDictionary) }
 		if (dictionary["picture"] != nil) { picture = Picture(dictionary: dictionary["picture"] as! NSDictionary) }
 		nat = dictionary["nat"] as? String
+        
+        description = "Result:- name: \(String(describing: name)), gender: \(String(describing: gender)), nat: \(String(describing: nat)), email: \(String(describing: email))"
+        
 	}
 
 		
@@ -89,7 +94,7 @@ public class Results {
 		dictionary.setValue(self.cell, forKey: "cell")
 		dictionary.setValue(self.id?.dictionaryRepresentation(), forKey: "id")
 		dictionary.setValue(self.picture?.dictionaryRepresentation(), forKey: "picture")
-		dictionary.setValue(self.nat, forKey: "nat")
+		dictionary.setValue(self	.nat, forKey: "nat")
 
 		return dictionary
 	}

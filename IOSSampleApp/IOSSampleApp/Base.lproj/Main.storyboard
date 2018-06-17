@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -175,23 +176,53 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Waiting for content .." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ug5-hR-1Up">
+                                <rect key="frame" x="16" y="204" width="343" height="255"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vpq-46-zHh">
+                                <rect key="frame" x="16" y="617" width="343" height="30"/>
+                                <state key="normal" title="Refresh with New Data"/>
+                                <connections>
+                                    <action selector="reloadData_click:" destination="crv-lx-VJm" eventType="touchDown" id="InR-PM-EH5"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EI9-Ca-MYq">
+                                <rect key="frame" x="16" y="461" width="343" height="148"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EI9-Ca-MYq" secondAttribute="height" multiplier="343:148" id="pLy-LR-qIp"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="IK7-hF-35m" firstAttribute="top" secondItem="Ug5-hR-1Up" secondAttribute="bottom" constant="208" id="0Vo-At-gB7"/>
                             <constraint firstAttribute="trailing" secondItem="UFZ-JV-LY8" secondAttribute="trailing" constant="16" id="23t-le-rNp"/>
+                            <constraint firstItem="Vpq-46-zHh" firstAttribute="top" secondItem="EI9-Ca-MYq" secondAttribute="bottom" constant="8" symbolic="YES" id="7Vo-y3-xiZ"/>
                             <constraint firstItem="69G-KC-pYW" firstAttribute="leading" secondItem="Ifo-ph-of1" secondAttribute="leading" id="8jX-HE-82O"/>
                             <constraint firstItem="Ifo-ph-of1" firstAttribute="leading" secondItem="3k1-27-vXV" secondAttribute="leading" id="HTr-Vo-ycD"/>
+                            <constraint firstItem="EI9-Ca-MYq" firstAttribute="trailing" secondItem="Vpq-46-zHh" secondAttribute="trailing" id="HbT-uB-oZd"/>
+                            <constraint firstItem="Ug5-hR-1Up" firstAttribute="leading" secondItem="69G-KC-pYW" secondAttribute="leading" id="Muc-Hj-rMs"/>
+                            <constraint firstItem="Ug5-hR-1Up" firstAttribute="top" secondItem="69G-KC-pYW" secondAttribute="bottom" constant="37" id="NFs-Jf-qhw"/>
                             <constraint firstItem="Ifo-ph-of1" firstAttribute="trailing" secondItem="HYk-8h-KMA" secondAttribute="trailingMargin" id="NHz-PY-EDU"/>
                             <constraint firstItem="3k1-27-vXV" firstAttribute="top" secondItem="hyk-rG-6Ld" secondAttribute="bottom" constant="55" id="OoD-uZ-DwJ"/>
+                            <constraint firstItem="Vpq-46-zHh" firstAttribute="leading" secondItem="Ug5-hR-1Up" secondAttribute="leading" id="PAL-ht-QMf"/>
+                            <constraint firstItem="EI9-Ca-MYq" firstAttribute="top" secondItem="Ug5-hR-1Up" secondAttribute="bottom" constant="2" id="RFW-BZ-cVl"/>
                             <constraint firstItem="69G-KC-pYW" firstAttribute="top" secondItem="Ifo-ph-of1" secondAttribute="bottom" constant="13" id="SCO-hi-YSF"/>
                             <constraint firstItem="UFZ-JV-LY8" firstAttribute="top" secondItem="hyk-rG-6Ld" secondAttribute="bottom" constant="8" id="Ymn-Ur-TJl"/>
                             <constraint firstItem="UFZ-JV-LY8" firstAttribute="leading" secondItem="HYk-8h-KMA" secondAttribute="leading" constant="16" id="ZLU-8m-aXM"/>
+                            <constraint firstItem="Ug5-hR-1Up" firstAttribute="trailing" secondItem="69G-KC-pYW" secondAttribute="trailing" id="ZOB-mR-MWt"/>
                             <constraint firstItem="IK7-hF-35m" firstAttribute="top" secondItem="69G-KC-pYW" secondAttribute="bottom" constant="500" id="eIv-eb-c76"/>
                             <constraint firstItem="69G-KC-pYW" firstAttribute="trailing" secondItem="Ifo-ph-of1" secondAttribute="trailing" id="ea1-Z0-5ri"/>
                             <constraint firstItem="Ifo-ph-of1" firstAttribute="top" secondItem="3k1-27-vXV" secondAttribute="bottom" constant="13" id="fTl-UV-Dco"/>
                             <constraint firstItem="Ifo-ph-of1" firstAttribute="trailing" secondItem="3k1-27-vXV" secondAttribute="trailing" id="gtD-2J-Otm"/>
                             <constraint firstItem="UFZ-JV-LY8" firstAttribute="top" secondItem="hyk-rG-6Ld" secondAttribute="bottom" constant="8" id="iJY-WQ-xMh"/>
                             <constraint firstItem="69G-KC-pYW" firstAttribute="leading" secondItem="UFZ-JV-LY8" secondAttribute="leading" id="nGt-Qu-7M0"/>
+                            <constraint firstItem="IK7-hF-35m" firstAttribute="top" secondItem="Vpq-46-zHh" secondAttribute="bottom" constant="20" id="qkv-pq-w45"/>
+                            <constraint firstItem="EI9-Ca-MYq" firstAttribute="trailing" secondItem="Ug5-hR-1Up" secondAttribute="trailing" id="rlQ-zd-N6v"/>
+                            <constraint firstItem="EI9-Ca-MYq" firstAttribute="leading" secondItem="Vpq-46-zHh" secondAttribute="leading" id="yg8-yZ-cMX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FCo-nN-bKK"/>
@@ -200,6 +231,9 @@
                         <outlet property="gender" destination="3k1-27-vXV" id="n0V-Zm-lAp"/>
                         <outlet property="nationality" destination="Ifo-ph-of1" id="lgu-cd-g9b"/>
                         <outlet property="obtainedName" destination="69G-KC-pYW" id="zwL-1g-zos"/>
+                        <outlet property="personImageView" destination="EI9-Ca-MYq" id="zTO-0e-ynU"/>
+                        <outlet property="reloadData" destination="Vpq-46-zHh" id="JaG-7U-MU2"/>
+                        <outlet property="responseDisplay" destination="Ug5-hR-1Up" id="MX4-ie-iZr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T6a-jz-XVZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
